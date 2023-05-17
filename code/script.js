@@ -3,12 +3,12 @@
 function hide_elem(hoverDIV, hiddenDIV)
 {
     document.getElementById(hoverDIV).addEventListener('mouseover', function() {
-        document.getElementById(hiddenDIV).style.visibility = 'visible';
+        // document.getElementById(hiddenDIV).style.visibility = 'visible';
         document.getElementById(hiddenDIV).style.opacity = '1';
     });
     
     document.getElementById(hoverDIV).addEventListener('mouseout', function() {
-        document.getElementById(hiddenDIV).style.visibility = 'hidden';
+        // document.getElementById(hiddenDIV).style.visibility = 'hidden';
         document.getElementById(hiddenDIV).style.opacity = '0';
     });
 }

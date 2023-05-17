@@ -45,8 +45,8 @@ body {
 
 .round-image {
     border-radius: 50%;
-    width: 100px;  /* Установите нужную вам ширину */
-    height: 100px;  /* Установите нужную вам высоту */
+    width: 200px;  /* Установите нужную вам ширину */
+    height: 200px;  /* Установите нужную вам высоту */
     object-fit: cover;
 }
 
@@ -67,20 +67,24 @@ body {
 
 
 
-#hidden-job {
-    visibility: hidden;
+#hidden-job, #hidden-pers  {
     max-width: 600px;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
 }
 
-#hidden-pers {
-    visibility: hidden;
-    max-width: 600px;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
-}
 
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+
+a.invisible {
+    color: transparent;
+}
 
 
 

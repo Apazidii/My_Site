@@ -4,20 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Apazidi</title>
+    <link rel="icon" href="images/A.png">
     <link rel="stylesheet" type="text/css" href="./style/style.css">
 </head>
 
 <body>
 
+
+
+      
+
+
+
     <div class="centered">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="invisible">Невидимая ссылка</a>
+
+
         <img class="round-image" src="./images/ava.jpg" alt="Your Image">
-        <br>
+
         <h6>
             Привет, меня зовут Костя и это мой сайт)
             <hr>
-            <div style="font-size: 16px;" id="hover-job">Немного обо мне с профессиональной точки зрения</div>
+            <div style="font-size: 16px; color: rgb(0, 0, 255);" id="hover-job">Немного обо мне с профессиональной точки зрения</div>
 
-            <div style="font-size: 16px;" id="hover-pers">Немного обо мне с личной точки зрения</div>
+            <div style="font-size: 16px; color: rgb(0, 0, 255);" id="hover-pers">Немного обо мне с личной точки зрения</div>
         </h6>
 
 
@@ -54,6 +64,8 @@
             <a href="https://github.com/Apazidii"><img class="icon-image" src="./images/git_icon.png"
                     alt="Your Image"></a>
             <a href="https://t.me/apazidii"><img class="icon-image" src="./images/tg_icon.png" alt="Your Image"></a>
+            <a href="https://www.instagram.com/kostyaapazidi/"><img
+                class="icon-image" src="./images/ig_icon.png" alt="Your Image"></a>
             <a href="https://docs.google.com/document/d/1gbAuPx2tKJxzCjhsfWrzOGcAZhSI8UGgRmBFaSG3RME/edit?usp=sharing"><img
                     class="icon-image" src="./images/cv_icon.png" alt="Your Image"></a>
         </div>
@@ -65,9 +77,18 @@
 
 
     </div>
-
+    <div id="particles-js"></div>
 
     <script src="code/script.js"></script>
+    <script src="particles.js-master/particles.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+          console.log('callback - particles.js config loaded');
+        });
+      </script>
+
+
 </body>
 
 
