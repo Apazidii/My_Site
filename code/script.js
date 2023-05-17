@@ -1,33 +1,31 @@
 
 
-function hide_elem(hoverDIV, hiddenDIV)
-{
-    document.getElementById(hoverDIV).addEventListener('mouseover', function() {
-        // document.getElementById(hiddenDIV).style.visibility = 'visible';
-        document.getElementById(hiddenDIV).style.opacity = '1';
+document.addEventListener('DOMContentLoaded', function() {
+    const initialText = 'Выберите категорию, чтобы увидеть подробности'; // Исходный текст
+    updateHiddenText(initialText); // Обновляем содержимое hidden-text при загрузке страницы
+  });
+  
+  function updateHiddenText(text) {
+    const hiddenTextElement = document.getElementById('hidden-text');
+    hiddenTextElement.textContent = text;
+  }
+  
+  function hide_elem(hoverDIV, text) {
+    const hoverElement = document.getElementById(hoverDIV);
+  
+    hoverElement.addEventListener('mouseover', function() {
+      updateHiddenText(text);
+      document.getElementById('hidden-text').style.opacity = '1';
     });
-    
-    document.getElementById(hoverDIV).addEventListener('mouseout', function() {
-        // document.getElementById(hiddenDIV).style.visibility = 'hidden';
-        document.getElementById(hiddenDIV).style.opacity = '0';
+  
+    hoverElement.addEventListener('mouseout', function() {
+      document.getElementById('hidden-text').style.opacity = '0';
     });
-}
-
-
-
-
-function showHiddenContent(hoverDIV, hiddenDIV) {
-    document.getElementById(hoverDIV).addEventListener('mouseover', function() {
-        document.getElementById(hiddenDIV).style.display = 'block';
-    });
-
-    document.getElementById(hoverDIV).addEventListener('mouseout', function() {
-        document.getElementById(hiddenDIV).style.visibility = 'none';
-    });
-}
-
-hide_elem('hover-job', 'hidden-job');
-hide_elem('hover-pers', 'hidden-pers');
-
+  }
+  
+  hide_elem('hover-job', 'Сейчас я учусь в МАИ по направлению "Бизнес-информатика". А также, параллельно учусь в школе 21 (Сбер/ecole 42), там я получил кучу навыков в управлении Linux, Web-разработке, прошел интенсив по Python Data-Science и многое другое, подробнее о моих навыках в моем резюме (ссылка снизу).');
+  
+  hide_elem('hover-pers', 'Очень люблю смотреть фильмы и в целом разбираюсь в правилах кинематографа. Путешествую, хотелось бы побывать по миру, но пока только по России. Играю в D&D. По выходным люблю сходить куда-нибудь или просто покататься на велосипеде по городу.');
+  
 // showHiddenContent('hover-job', 'hidden-job');
 // showHiddenContent('hover-pers', 'hidden-pers');

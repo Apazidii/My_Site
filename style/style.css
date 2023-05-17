@@ -67,11 +67,11 @@ body {
 
 
 
-#hidden-job, #hidden-pers  {
-    max-width: 600px;
+#hidden-text {
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
-}
+    transition: opacity 0.5s linear;
+  }
+  
 
 
 #particles-js {
