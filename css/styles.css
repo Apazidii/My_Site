@@ -1,0 +1,251 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #15181A;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+
+.skw-pages {
+  overflow: hidden;
+  position: relative;
+  height: 100vh; }
+
+.skw-page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%; }
+  .skw-page__half {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    transition: transform 1s; }
+    .skw-page__half--left {
+      left: 0;
+      transform: translate3d(-32.4vh, 100%, 0); }
+    .skw-page__half--right {
+      left: 50%;
+      transform: translate3d(32.4vh, -100%, 0); }
+    .skw-page.active .skw-page__half {
+      transform: translate3d(0, 0, 0); }
+  .skw-page__skewed {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 140%;
+    height: 100%;
+    transform: skewX(-18deg);
+    background: #000; }
+    .skw-page__half--left .skw-page__skewed {
+      left: -40%; }
+    .skw-page__half--right .skw-page__skewed {
+      right: -40%; }
+  .skw-page__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 30%;
+    color: #fff;
+    transform: skewX(18deg);
+    transition: transform 1s, opacity 1s;
+    background-size: cover; }
+    .skw-page__half--left .skw-page__content {
+      padding-left: 30%;
+      padding-right: 30%;
+      transform-origin: 100% 0; }
+    .skw-page__half--right .skw-page__content {
+      padding-left: 30%;
+      padding-right: 30%;
+      transform-origin: 0 100%; }
+    .skw-page.inactive .skw-page__content {
+      opacity: 0.5;
+      transform: skewX(18deg) scale(0.95); }
+  .skw-page__heading {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center; }
+  .skw-page__description {
+    font-size: 18px;
+    text-align: center; }
+  .skw-page__link {
+    color: #FFA0A0; }
+  .skw-page-1 .skw-page__half--left .skw-page__content {
+    background-image: url("../images/2img.jpg"); }
+  .skw-page-1 .skw-page__half--right .skw-page__content {
+    background: #ff93f6; }
+  .skw-page-2 .skw-page__half--left .skw-page__content {
+    background: #492c4f; }
+  .skw-page-2 .skw-page__half--right .skw-page__content {
+    background-image: url("../images/3img.jpg"); }
+  .skw-page-3 .skw-page__half--left .skw-page__content {
+    background-image: url("../images/5img.jpg"); }
+  .skw-page-3 .skw-page__half--right .skw-page__content {
+    background: #3d9fac; }
+  .skw-page-4 .skw-page__half--left .skw-page__content {
+    background: #29a855; }
+  .skw-page-4 .skw-page__half--right .skw-page__content {
+    background-image: url("../images/6img.jpg"); }
+  .skw-page-5 .skw-page__half--left .skw-page__content {
+    background-image: url("../images/7img.jpg"); }
+  .skw-page-5 .skw-page__half--right .skw-page__content {
+    background: #161645; }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        background: #0A122A;
+      }
+      
+      /* Let's style the wrapper in such away that, 
+      it should always be at the center of the browser */
+      .wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 550px;
+      }
+      
+      /* Style the Un-order list by setting its list-style to none */
+      .wrapper ul {
+        list-style: none;
+      }
+      
+      /* Style the list items inside the UL list, by setting its width, height and line-height 
+        and float them to left and set its border and border-radius.
+       */
+      .wrapper ul li {
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        margin: 0 10px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 5px solid #D8E2DC;
+        float: left;
+        transition: all 0.5s ease;
+      }
+      
+      /* Style the icons by setting its color and margin-top value to 20px 
+      to align it properly */
+      .wrapper ul li .fa {
+        color: #D8E2DC;
+        /* margin-top: 20px; */
+        transition: all 0.5s ease;
+      }
+      
+      /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+        to icons for glowing effect and use transition property for smooth transition effect. */
+      /*github*/
+      .wrapper ul li:hover.github {
+        border: 5px solid #6cc644;
+        box-shadow: 0 0 15px #6cc644;
+        transition: all 0.5s ease;
+      }
+      
+      .wrapper ul li:hover .fa-github-alt {
+        color: #6cc644;
+        text-shadow: 0 0 15px #6cc644;
+        transition: all 0.5s ease;
+      }
+      
+      /*vk*/
+      .wrapper ul li:hover.vk {
+        border: 5px solid #0077ff;
+        box-shadow: 0 0 15px #0077ff;
+        transition: all 0.5s ease;
+      }
+      
+      .wrapper ul li:hover .fa-vk {
+        color: #0077ff;
+        text-shadow: 0 0 15px #0077ff;
+        transition: all 0.5s ease;
+      }
+      
+      /* cv */
+      .wrapper ul li:hover.cv {
+        border: 5px solid #19ff19;
+        box-shadow: 0 0 15px #19ff19;
+        transition: all 0.5s ease;
+      }
+      
+      .wrapper ul li:hover .fa-file {
+        color: #19ff19;
+        text-shadow: 0 0 15px #19ff19;
+        transition: all 0.5s ease;
+      }
+      
+      /* telegram */
+      .wrapper ul li:hover.telegram {
+        border: 5px solid #0088cc;
+        box-shadow: 0 0 15px #0088cc;
+        transition: all 0.5s ease;
+      }
+      
+      .wrapper ul li:hover .fa-telegram {
+        color: #0088cc;
+        text-shadow: 0 0 15px #0088cc;
+        transition: all 0.5s ease;
+      }
+      
+      /* email */
+      .wrapper ul li:hover.gmail {
+        border: 5px solid #ea4335;
+        box-shadow: 0 0 15px #ea4335;
+        transition: all 0.5s ease;
+      }
+      
+      .wrapper ul li:hover .fa-envelope {
+        color: #ea4335;
+        text-shadow: 0 0 15px #ea4335;
+        transition: all 0.5s ease;
+      }
+      
+      
+
+      
+
+      /* media queries */
+      
+      @media screen and (max-width: 640px){
+        .wrapper {
+            width: 350px;
+        }
+        .wrapper ul li{
+            margin-top: 10px;
+        }
+        .wrapper ul li.google{
+            margin-left: 60px;
+        }
+      }
+      
+      
+      @media screen and (max-width: 340px){
+        .wrapper {
+            width: 150px;
+        }
+        .wrapper ul li{
+            margin:15px;
+        }
+        .wrapper ul li.google{
+            margin-left: 15px;
+        }
+      }
+      
+      
+    

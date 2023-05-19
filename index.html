@@ -1,80 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Apazidi</title>
-    <link rel="icon" href="images/A.png">
-    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apazidii</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="icon" href="images/at-solid.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 </head>
+<!-- check the Comments for more info -->
 
-<body>
-
-
-
-      
-
-
-
-    <div class="centered">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="invisible">Невидимая ссылка</a>
-
-
-        <img class="round-image" src="./images/ava.jpg" alt="Your Image">
-        <h6>
-            Привет, меня зовут Костя и это мой сайт)
-            <hr>
-            <div style="font-size: 16px; color: rgb(0, 0, 255);" id="hover-job">Немного обо мне с профессиональной точки зрения</div>
-            <div style="font-size: 16px; color: rgb(0, 0, 255);" id="hover-pers">Немного обо мне с личной точки зрения</div>
-          </h6>
-          
-          <div id="hidden-text" style="font-size: 16px; max-width: 600px;"></div>
-          
-        
-
-
-        
-
-
-        <div class="center-bottom">
-            <div>
-                <p style="font-size: 12px;">
-                    8 (925) 734-03-71
-                    <br>
-                    kostya.apazdi@gmail.com
-                </p>
+<body >
+    <div class="skw-pages">
+        <div class="skw-page skw-page-1 active">
+          <div class="skw-page__half skw-page__half--left">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content"></div>
             </div>
-            <a href="https://vk.com/jobcsc"><img class="icon-image" src="./images/vk_icon.png" alt="Your Image"></a>
-            <a href="https://github.com/Apazidii"><img class="icon-image" src="./images/git_icon.png"
-                    alt="Your Image"></a>
-            <a href="https://t.me/apazidii"><img class="icon-image" src="./images/tg_icon.png" alt="Your Image"></a>
-            <a href="https://www.instagram.com/kostyaapazidi/"><img
-                class="icon-image" src="./images/ig_icon.png" alt="Your Image"></a>
-            <a href="https://docs.google.com/document/d/1gbAuPx2tKJxzCjhsfWrzOGcAZhSI8UGgRmBFaSG3RME/edit?usp=sharing"><img
-                    class="icon-image" src="./images/cv_icon.png" alt="Your Image"></a>
+          </div>
+          <div class="skw-page__half skw-page__half--right">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content">
+                <h2 class="skw-page__heading">Привет, меня зовут Костя</h2>
+                <p class="skw-page__description">И это мой небольшой сайт</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="skw-page skw-page-2">
+          <div class="skw-page__half skw-page__half--left">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content">
+                <h2 class="skw-page__heading">С личной стороны</h2>
+                <p class="skw-page__description">
+                    Я очень люблю смотреть фильмы,
+                    и в целом интересуюсь областью кинематографа. Очень общительный и всегда рад новым знакомствам.
+                    Играю в D&D. Зимой не упускаю возможность покататься на сноуборде.
+                    >500 лвл в Apex Legends.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="skw-page__half skw-page__half--right">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skw-page skw-page-3">
+          <div class="skw-page__half skw-page__half--left">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content"></div>
+            </div>
+          </div>
+          <div class="skw-page__half skw-page__half--right">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content">
+                <h2 class="skw-page__heading">А так же очень люблю путешествовать</h2>
+                <p class="skw-page__description">
+                    Еще в детстве объехал вместе с родителями большинство стран Европы.
+                    Теперь путешествую самостоятельно с друзьями, хотелось бы по миру, но пока только по России.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skw-page skw-page-4">
+          <div class="skw-page__half skw-page__half--left">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content">
+                <h2 class="skw-page__heading">С профессиональной стороны</h2>
+                <p class="skw-page__description">
+                    Сейчас учусь в МАИ и параллельно учусь в школе 21 (ecole 42/сбер).
+                    В школе 21 приобрел множество навыков в управлении Linux, C/C++, Python Data Science и многие другие
+                    (подробнее о моих навыках в моем резюме).
+                    Сейчас активно ищу работу или стажировку.
+                    В вузе изучал и написал курсовую работу на тему Ajile, поэтому прекрасно представляю как работать под Scrum
+                    или другими фреймворами.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="skw-page__half skw-page__half--right">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skw-page skw-page-5">
+          <div class="skw-page__half skw-page__half--left">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content"></div>
+            </div>
+          </div>
+          <div class="skw-page__half skw-page__half--right">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content">
+                
+                <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+                <div class="wrapper">
+                  <ul>
+                    <li class="vk"><a href="#"><a href="https://vk.com/jobcsc"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="github"><a href="#"><a href="https://github.com/Apazidii"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="telegram"><a href="#"><a href="https://t.me/apazidii"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="gmail"><a href="#"><a href="mailto:kostya.apazidi@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="cv"><a href="#"><a href="https://docs.google.com/document/d/1gbAuPx2tKJxzCjhsfWrzOGcAZhSI8UGgRmBFaSG3RME/edit?usp=sharing"><i class="fa fa-file  fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+ 
+                
+                
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
-        
-        
-
-
-    </div>
-    <div id="particles-js"></div>
-
-    <script src="code/script.js"></script>
-    <script src="particles.js-master/particles.js"></script>
-
-    <script>
-        particlesJS.load('particles-js', 'particlesjs-config.json', function() {
-          console.log('callback - particles.js config loaded');
-        });
-      </script>
-
-
+    <script src="js/script.js"></script>
 </body>
-
-
 
 </html>
